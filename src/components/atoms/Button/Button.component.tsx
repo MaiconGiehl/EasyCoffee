@@ -1,12 +1,6 @@
 import React from 'react'
-// import Button, { ButtonProps } from 'react-bootstrap/Button'
+import Button from './Button.style'
 
-// interface ButtonInterface extends ButtonProps {
-//   colorTest?: string
-// }
-
-const ButtonComponent = () => (
-  <button>Primary</button>
-)
+const ButtonComponent = () => <Button>Primary</Button>
 
 export default ButtonComponent
