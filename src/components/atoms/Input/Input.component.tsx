@@ -2,7 +2,7 @@ import React from 'react'
 import Input from './Input.style'
 
 interface InputInterface {
-  content: string[]
+  content?: string
 }
 
 const InputComponent = (props: InputInterface) => (

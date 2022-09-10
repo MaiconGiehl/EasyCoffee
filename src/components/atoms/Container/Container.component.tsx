@@ -2,7 +2,7 @@ import React from 'react'
 import Container from './Container.style'
 
 interface ContainerInterface {
-  content: string[]
+  content?: string[]
 }
 
 const ContainerComponent = (props: ContainerInterface) => (
