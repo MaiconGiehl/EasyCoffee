@@ -4,11 +4,10 @@ import Container from '../../components/atoms/Container'
 import Input from '../../components/atoms/Input'
 
 const Home = () => (
-  <>
-    <Container />
+  <Container>
     <Button />
     <Input />
-  </>
+  </Container>
 )
 
 export default Home

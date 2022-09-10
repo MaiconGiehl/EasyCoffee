@@ -1,14 +1,12 @@
 import React from 'react'
 import Container from './Container.style'
 
-interface ContainerInterface {
-  content?: string[]
+interface ContainerComponentInterface {
+  children?: JSX.Element[] | JSX.Element
 }
 
-const ContainerComponent = (props: ContainerInterface) => (
-  <>
-    <Container />
-  </>
+const ContainerComponent: React.FC<ContainerComponentInterface> = ({ children }) => (
+  <Container>{children}</Container>
 )
 
 export default ContainerComponent
