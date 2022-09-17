@@ -13,7 +13,7 @@ const GlobalStyle = createGlobalStyle`
 }
     body {
         background-color: ${veryLightBrown};
-        backgrouhnd-image: url(${coffeeBean});
+        background-image: url(${coffeeBean});
         background-size: 600px;
         height: 100vw;
     }
