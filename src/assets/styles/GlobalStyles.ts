@@ -1,18 +1,20 @@
 import { createGlobalStyle } from 'styled-components'
 import coffeeBean from '../../assets/images/coffeeBean.svg'
 
-import colors from './variables'
+import colors from '../variables'
 
-const { veryLightBrown } = colors
+const { brown } = colors
 
 const GlobalStyle = createGlobalStyle`
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: 'Roboto', sans-serif;
+    }           
     body {
-        background-color: ${veryLightBrown};
+        background-color: ${brown};
         background-image: url(${coffeeBean});
         background-size: 600px;
         height: 100vw;
