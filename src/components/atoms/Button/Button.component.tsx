@@ -1,7 +1,7 @@
-import React from 'react'
+import React, { BaseHTMLAttributes } from 'react'
 import Button from './Button.style'
 
-interface ButtonInterface {
+interface ButtonInterface extends BaseHTMLAttributes<typeof Button> {
   children?: JSX.Element | string
 }
 
