@@ -1,14 +1,15 @@
 import React from 'react'
+import { StyledComponentPropsWithRef } from 'styled-components'
 import Input from './Input.style'
 
-interface InputInterface {
+interface InputInterface extends StyledComponentPropsWithRef<typeof Input> {
   type: string
   name?: string
 }
 
-const InputComponent = ({ type }: InputInterface) => (
+const InputComponent = ({ type, ...rest }: InputInterface) => (
   <>
-    <Input type={type} />
+    <Input type={type} {...rest} />
   </>
 )
 
