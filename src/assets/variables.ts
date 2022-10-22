@@ -6,12 +6,10 @@ interface ColorsInterface {
   white: string
 }
 
-const colors: ColorsInterface = {
+export const colors: ColorsInterface = {
   darkBrown: '#240f04',
   brown: '#5c3015',
   lightBrown: '#9f5524',
   veryLightBrown: '#bc906a',
-  white: '#FFF',
+  white: '#FFF'
 }
-
-export default colors

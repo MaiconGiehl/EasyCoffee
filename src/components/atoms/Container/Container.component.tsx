@@ -1,18 +1,23 @@
 import React from 'react'
 import Container from './Container.style'
 
-interface ContainerComponentInterface {
+type ContainerComponentInterface = {
   children?: JSX.Element | JSX.Element[]
   fullHeight?: boolean
   fullCentered?: boolean
-}
+};
 
-const ContainerComponent: React.FC<ContainerComponentInterface> = ({
+const ContainerComponent: React.FC<
+  ContainerComponentInterface
+> = ({
   children,
   fullHeight,
-  fullCentered,
+  fullCentered
 }) => (
-  <Container fullHeight={fullHeight} fullCentered={fullCentered}>
+  <Container 
+    fullHeight={fullHeight}
+    fullCentered={fullCentered
+    }>
     {children}
   </Container>
 )
