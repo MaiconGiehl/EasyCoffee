@@ -1,5 +1,5 @@
 import React from 'react'
-import { StyledComponentPropsWithRef } from 'styled-components'
+import {StyledComponentPropsWithRef} from 'styled-components'
 import Input from './Input.style'
 
 interface InputInterface extends StyledComponentPropsWithRef<typeof Input> {
@@ -7,10 +7,11 @@ interface InputInterface extends StyledComponentPropsWithRef<typeof Input> {
   name?: string
 }
 
-const InputComponent = ({ type, ...rest }: InputInterface) => (
-  <>
-    <Input type={type} {...rest} />
-  </>
+const InputComponent = ({
+  type,
+  ...rest
+}: InputInterface) => (
+  <Input type={type} {...rest} />
 )
 
 export default InputComponent

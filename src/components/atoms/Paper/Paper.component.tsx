@@ -1,12 +1,21 @@
 import React from 'react'
-import Container from './Paper.style'
+import {StyledComponentPropsWithRef} from 'styled-components'
+import Paper from './Paper.style'
 
-type PaperComponentInterface = {
-  children?: JSX.Element | JSX.Element[]
+interface PaperComponentInterface extends StyledComponentPropsWithRef<typeof Paper> {
+  fluid?: boolean
 }
 
-const PaperComponent: React.FC<PaperComponentInterface> = ({ children }) => (
-  <Container>{children}</Container>
+const PaperComponent: React.FC<
+  PaperComponentInterface
+> = ({
+  children,
+  fluid,
+  ...rest
+}) => (
+  <Paper fluid={fluid} {...rest}>
+    {children}
+  </Paper>
 )
 
 export default PaperComponent
